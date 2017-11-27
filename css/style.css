@@ -1,5 +1,6 @@
 body {
 	text-align: center;
+	margin: 0;
 }
 
 h1 {
@@ -8,6 +9,7 @@ h1 {
 	letter-spacing: 1px;
 	font-weight: 400;
 	font-size: 45px;
+	margin: 0;
 }
 
 a {
@@ -24,4 +26,35 @@ h2 {
 	letter-spacing: 1px;
 	font-weight: 600;
 	font-size: 20px;
+}
+
+header {
+	background-color: #F15B31;
+	color: #FFFFFF;
+	padding: 30px, 20px, 20px, 30px;
+}
+
+nav {
+	background-color: #00A6B3;
+	color: #FFFFFF;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+a {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+main {
+	width: 850px;
+	margin-left: auto 35px;
+	margin-right: auto 35px;
+	margin: auto;
+}
+
+img {
+	margin-top: 40px;
+	margin-left: 8px;
+	margin-right: 8px;
 }
