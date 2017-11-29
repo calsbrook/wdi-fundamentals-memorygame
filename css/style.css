@@ -4,28 +4,39 @@ body {
 }
 
 h1 {
-	font-family: raleway;
-	color: #0D2C40;
+	font-family: Raleway;
+	color: white;
 	letter-spacing: 1px;
 	font-weight: 400;
 	font-size: 45px;
 	margin: 0;
+	text-transform: uppercase;
 }
 
 a {
-	font-family: raleway;
-	color: #F15831;
+	font-family: Raleway;
+	text-transform: uppercase;
+	color: white;
 	letter-spacing: 1px;
+	text-decoration: none;
 	font-weight: 600;
 	font-size: 18px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-bottom: 2px solid transparent;
+}
+
+a:hover {
+	border: 2px solid white;
 }
 
 h2 {
-	font-family: raleway;
+	font-family: Raleway;
 	color: #0D2C40;
 	letter-spacing: 1px;
 	font-weight: 600;
 	font-size: 20px;
+	text-transform: uppercase;
 }
 
 header {
@@ -41,11 +52,6 @@ nav {
 	padding-bottom: 20px;
 }
 
-a {
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
 main {
 	width: 850px;
 	margin-left: auto 35px;
@@ -57,4 +63,38 @@ img {
 	margin-top: 40px;
 	margin-left: 8px;
 	margin-right: 8px;
+}
+
+footer {
+	text-transform: uppercase;
+	padding: 20px;
+	background-color: #0D2C40;
+	color: white;
+	font-size: 14px;
+	letter-spacing: .08em;
+	font-weight: 500;
+}
+
+.copyright {
+	font-family: Raleway;
+	float: left;
+}
+
+.message {
+	font-family: Raleway;
+	float: right;
+}
+
+.clearfix:after {
+visibility: hidden;
+display: block;
+content: " ";
+clear: both;
+height: 0;
+font-size: 0;
+}
+
+.name {
+	color: #F15B31;
+	font-weight: 700;
 }
