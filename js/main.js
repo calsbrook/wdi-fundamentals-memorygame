@@ -76,7 +76,7 @@ var checkForMatch = function () {
 				board.removeChild(board.firstChild);
 			}	},30);
 			setTimeout(function() {createBoard();
-			},30);
+			},35);
 		}
 }
 
