@@ -38,6 +38,7 @@ var createBoard = function () {
 var flipCard = function () {
 	var cardId = this.getAttribute('data-id');
 	this.setAttribute('src', cards[cardId].cardImage);
+	this.removeEventListener('click', flipCard);
 	cardsInPlay.push(cards[cardId].rank);
 	if (cardsInPlay.length === 2) {
 	checkForMatch();
@@ -50,10 +51,13 @@ var checkForMatch = function () {
 			alert('You found a match!');
 			cardsInPlay = [];
 			score = score + 1;
+			displayScore();
 			console.log(score);
 		} else {
+			alert('Sorry try again');
 			cardsInPlay = [];
 			score = score - 1;
+			displayScore();
 			var board = document.getElementById('game-board');
 			while(board.hasChildNodes()){
 				board.removeChild(board.firstChild);
@@ -62,5 +66,9 @@ var checkForMatch = function () {
 		}
 }
 
-createBoard();
+var displayScore = function () {
+	document.getElementById('score-display').innerHTML = score;
+}
 
+createBoard();
+displayScore();
