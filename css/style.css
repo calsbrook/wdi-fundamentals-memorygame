@@ -100,3 +100,9 @@ font-size: 0;
 	color: #F15B31;
 	font-weight: 700;
 }
+
+button {
+	font-family: Raleway;
+	text-transform: uppercase;
+	font-weight: 900;
+}

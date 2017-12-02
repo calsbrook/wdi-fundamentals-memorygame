@@ -38,6 +38,7 @@ var reset = function () {
 	document.getElementById('game-board').innerHTML="";
 	createBoard();
 	score = 0;
+	cardsInPlay = [];
 	displayScore();
 }
 
@@ -55,21 +56,27 @@ var flipCard = function () {
 
 var checkForMatch = function () {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
-			alert('You found a match!');
 			cardsInPlay = [];
 			score = score + 1;
 			displayScore();
 			console.log(score);
+			setTimeout(function() {
+  	alert('You found a match!');
+  },30);
 		} else {
-			alert('Sorry try again');
+			setTimeout(function() {
+  	alert('Sorry try again');
+	},30);
 			cardsInPlay = [];
 			score = score - 1;
 			displayScore();
-			var board = document.getElementById('game-board');
+			setTimeout(function() {
+				var board = document.getElementById('game-board');
 			while(board.hasChildNodes()){
 				board.removeChild(board.firstChild);
-			}
-			createBoard();
+			}	},30);
+			setTimeout(function() {createBoard();
+			},30);
 		}
 }
 
