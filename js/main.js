@@ -34,6 +34,13 @@ var createBoard = function () {
 	}
 };
 
+var reset = function () {
+	document.getElementById('game-board').innerHTML="";
+	createBoard();
+	score = 0;
+	displayScore();
+}
+
 
 var flipCard = function () {
 	var cardId = this.getAttribute('data-id');
